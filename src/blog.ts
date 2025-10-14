@@ -34,3 +34,44 @@ const blogs: Blog[] = [
     slug: "index.html",
   },
 ];
+
+/**
+ * Create a new div element instance with the blog entry from a Blog object.
+ * @param {Blog} blogEntry - blog instance to create as a html div.
+ * @returns {HTMLDivElement} - The generated div element.
+ */
+function createBlogDiv(blogEntry: Blog): HTMLDivElement {
+  const newBlogDiv = document.createElement("div");
+  newBlogDiv.className = "blog-entry";
+
+  const title = document.createElement("h1");
+  title.className = "blog-entry-title";
+  title.innerHTML = blogEntry.title;
+  newBlogDiv.appendChild(title);
+
+  const date = document.createElement("h2");
+  date.className = "blog-entry-date";
+  date.innerHTML = blogEntry.date;
+  newBlogDiv.appendChild(date);
+
+  const image = document.createElement("img");
+  image.className = "blog-entry-image";
+  image.src = blogEntry.image;
+  image.alt = blogEntry.imageAlt;
+  newBlogDiv.appendChild(image);
+
+  const description = document.createElement("p");
+  description.className = "blog-entry-description";
+  description.innerHTML = blogEntry.description;
+  newBlogDiv.appendChild(description);
+
+  return newBlogDiv;
+}
+
+const blogContainer = document.getElementById("blog-container");
+
+// add all blog entries to DOM within blogContainer div
+for (const blogEntry of blogs) {
+  let newBlogDiv = createBlogDiv(blogEntry);
+  blogContainer?.appendChild(newBlogDiv);
+}
