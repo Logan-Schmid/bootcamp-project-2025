@@ -20,18 +20,18 @@ const blogs: Blog[] = [
     title: "Bootcamp",
     date: "10/13/2025",
     description: "Starting to revamp the site with Typescript, pretty cool.",
-    image: "assets/personal_site_env_starter_pack.png",
+    image: "/assets/personal_site_env_starter_pack.png",
     imageAlt:
       "Screenshot of my site's home page once I finished the starter pack.",
-    slug: "index.html",
+    slug: "bootcamp",
   },
   {
     title: "Hello world",
     date: "10/06/2025",
     description: "Wow it's hard to make a site look nice with html and CSS.",
-    image: "assets/wip_personal_site.jpg",
-    imageAlt: "Screenshot of start of webpage",
-    slug: "index.html",
+    image: "/assets/wip_personal_site.jpg",
+    imageAlt: "Screenshot of start of webpage.",
+    slug: "hello-world",
   },
 ];
 
@@ -43,13 +43,17 @@ const blogs: Blog[] = [
 function createBlogDiv(blogEntry: Blog): HTMLDivElement {
   const newBlogDiv = document.createElement("div");
   newBlogDiv.className = "blog-entry";
+  newBlogDiv.setAttribute(
+    "onclick",
+    `window.location.href='/blogs/${blogEntry.slug}.html';`
+  );
 
-  const title = document.createElement("h1");
+  const title = document.createElement("h2");
   title.className = "blog-entry-title";
   title.innerHTML = blogEntry.title;
   newBlogDiv.appendChild(title);
 
-  const date = document.createElement("h2");
+  const date = document.createElement("h3");
   date.className = "blog-entry-date";
   date.innerHTML = blogEntry.date;
   newBlogDiv.appendChild(date);

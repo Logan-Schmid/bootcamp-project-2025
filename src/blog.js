@@ -3,17 +3,17 @@ var blogs = [
         title: "Bootcamp",
         date: "10/13/2025",
         description: "Starting to revamp the site with Typescript, pretty cool.",
-        image: "assets/personal_site_env_starter_pack.png",
+        image: "/assets/personal_site_env_starter_pack.png",
         imageAlt: "Screenshot of my site's home page once I finished the starter pack.",
-        slug: "index.html",
+        slug: "bootcamp",
     },
     {
         title: "Hello world",
         date: "10/06/2025",
         description: "Wow it's hard to make a site look nice with html and CSS.",
-        image: "assets/wip_personal_site.jpg",
-        imageAlt: "Screenshot of start of webpage",
-        slug: "index.html",
+        image: "/assets/wip_personal_site.jpg",
+        imageAlt: "Screenshot of start of webpage.",
+        slug: "hello-world",
     },
 ];
 /**
@@ -24,11 +24,12 @@ var blogs = [
 function createBlogDiv(blogEntry) {
     var newBlogDiv = document.createElement("div");
     newBlogDiv.className = "blog-entry";
-    var title = document.createElement("h1");
+    newBlogDiv.setAttribute("onclick", "window.location.href='/blogs/".concat(blogEntry.slug, ".html';"));
+    var title = document.createElement("h2");
     title.className = "blog-entry-title";
     title.innerHTML = blogEntry.title;
     newBlogDiv.appendChild(title);
-    var date = document.createElement("h2");
+    var date = document.createElement("h3");
     date.className = "blog-entry-date";
     date.innerHTML = blogEntry.date;
     newBlogDiv.appendChild(date);
