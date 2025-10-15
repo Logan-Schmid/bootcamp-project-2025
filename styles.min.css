@@ -217,6 +217,10 @@ input[type="submit"]:active {
   margin-right: 30px;
 }
 
+.blog-entry:hover {
+  cursor: pointer;
+}
+
 .blog-entry-image {
   width: 80%;
 }
