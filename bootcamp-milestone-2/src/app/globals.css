@@ -1,8 +1,10 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #C8E6C9;
   --foreground: #171717;
+  --header-footer-bg: #404e3b;
+  --header-footer-text: #e6e6e6;
 }
 
 html {
@@ -11,7 +13,7 @@ html {
 
 body {
   /* background: linear-gradient(to right, var(--cg-grey), black); */
-  background: #C8E6C9;
+  background: var(--background);
   position: relative;
   min-height: 100vh;
   padding: 0;
