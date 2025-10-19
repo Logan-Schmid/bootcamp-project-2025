@@ -6,15 +6,7 @@ export default function Blog() {
     <main>
       <h1 className="page-title">Blog</h1>
       {blogs.map((blog) => (
-        <BlogPreview
-          key={blog.slug}
-          title={blog.title}
-          date={blog.date}
-          description={blog.description}
-          image={blog.image}
-          imageAlt={blog.imageAlt}
-          slug={blog.slug}
-        />
+        <BlogPreview key={blog.slug} {...blog} />
       ))}
     </main>
   );
