@@ -1,0 +1,39 @@
+#blog-container {
+  width: 1000px; /* set a width or max-width */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog-entry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+  border: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 30px;
+}
+
+.blog-entry-title,
+.blog-entry-date {
+  width: 100%; /* Allows the text-align property to work if parent is flex */
+  text-align: center; /* Centers the h2 only */
+  margin-bottom: 12px; /* Optional: Adds spacing below section title */
+}
+
+.blog-entry-description {
+  font-weight: normal;
+}
+
+.blog-entry:hover {
+  cursor: pointer;
+}
+
+.blog-entry-image {
+  width: 100%;
+  border-radius: 10px;
+}
