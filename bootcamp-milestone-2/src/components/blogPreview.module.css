@@ -27,10 +27,6 @@
   font-weight: normal;
 }
 
-.blog-entry:hover {
-  cursor: pointer;
-}
-
 .blog-entry-image {
   width: 100%;
   border-radius: 10px;
