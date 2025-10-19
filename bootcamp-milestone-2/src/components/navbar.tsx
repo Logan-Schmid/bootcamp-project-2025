@@ -7,23 +7,23 @@ export default function Navbar() {
     <header>
       <nav className={styles.navbar}>
         <h1 className={styles.logo}>
-          <Link href="index.html">Logan Schmid</Link>
+          <Link href="/">Logan Schmid</Link>
         </h1>
         <ul className={styles["nav-list"]}>
           <li>
-            <Link href="index.html">Home</Link>
+            <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="blog.html">Blog</Link>
+            <Link href="/blog">Blog</Link>
           </li>
           <li>
-            <Link href="portfolio.html">Portfolio</Link>
+            <Link href="/portfolio">Portfolio</Link>
           </li>
           <li>
-            <Link href="resume.html">Resume</Link>
+            <Link href="/resume">Resume</Link>
           </li>
           <li>
-            <Link href="contact.html">Contact</Link>
+            <Link href="/contact">Contact</Link>
           </li>
         </ul>
       </nav>
