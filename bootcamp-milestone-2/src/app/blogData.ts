@@ -15,7 +15,7 @@ export interface Blog {
   slug: string; // a slug is a URL name used to redirect to a specific page
 }
 
-const blogs: Blog[] = [
+export const blogs: Blog[] = [
   {
     title: "Bootcamp Milestone 1",
     date: "10/13/2025",
