@@ -1,18 +1,15 @@
 import React from "react";
-import style from "./navbar.module.css";
+import styles from "./navbar.module.css";
 import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <header className={style.navbar}>
-      <h1 className="logo">
-        <Link href="index.html">Logan Schmid</Link>
-      </h1>
-      <nav className="navbar">
-        <h1 className="logo">
+    <header>
+      <nav className={styles.navbar}>
+        <h1 className={styles.logo}>
           <Link href="index.html">Logan Schmid</Link>
         </h1>
-        <ul className="nav-list">
+        <ul className={styles["nav-list"]}>
           <li>
             <Link href="index.html">Home</Link>
           </li>
