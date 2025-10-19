@@ -4,3 +4,18 @@
   --background: #ffffff;
   --foreground: #171717;
 }
+
+html {
+  height: 100%;
+}
+
+body {
+  /* background: linear-gradient(to right, var(--cg-grey), black); */
+  background: #C8E6C9;
+  position: relative;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+
+  font-size: 14px;
+}
