@@ -9,6 +9,7 @@ export default function Home() {
           <p>
             I am a <strong>BMED grad student</strong> at <em>Cal Poly</em>.
           </p>
+          <br />
           <p>
             I am currently working on my Master's thesis, involving the use of{" "}
             <em>pressure sensors</em> and <em>deep learning</em> models in an{" "}
