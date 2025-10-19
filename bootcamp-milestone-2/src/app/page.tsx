@@ -1,9 +1,11 @@
+import styles from "@/app/page.module.css";
+
 export default function Home() {
   return (
     <main>
       <h1 className="page-title">Hi, I'm Logan Schmid</h1>
-      <div className="about">
-        <div className="about-text">
+      <div className={styles["about"]}>
+        <div className={styles["about-text"]}>
           <p>
             I am a <strong>BMED grad student</strong> at <em>Cal Poly</em>.
           </p>
@@ -14,7 +16,7 @@ export default function Home() {
             <em>lower-limb prosthetic</em> on an amputee's residual limb.
           </p>
         </div>
-        <div className="about-image">
+        <div className={styles["about-image"]}>
           <img
             src="/LLEAP Headshot 2023.png"
             alt="Picture of me!"
