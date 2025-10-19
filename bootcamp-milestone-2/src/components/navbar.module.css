@@ -1,11 +1,3 @@
-:root {
-  /* variables */
-  --cg-black: rgb(30, 32, 32);
-  --cg-blue: rgb(36, 94, 255);
-  --cg-grey: rgb(243, 243, 243);
-  --cg-white: rgb(255, 255, 255);
-}
-
 .navbar {
   position: -webkit-sticky;
   position: sticky;
@@ -19,8 +11,8 @@
   align-items: center;
   text-align: center;
 
-  background-color: #404e3b;
-  color: #e6e6e6;
+  background-color: var(--header-footer-bg);
+  color: var(--header-footer-text);
   padding: 0px 0px;
 
   /* Debug border */
